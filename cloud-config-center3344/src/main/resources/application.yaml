@@ -8,12 +8,13 @@ spring:
     config:
       server:
         git:
-          uri: git@github.com:jiuweile998/Test-springcloud-config #https://github.com/jiuweile998/Test-springcloud-config.git #GitHub上面的git仓库名字
+          uri: git@github.com:jiuweile998/Test-springcloud-config.git #https://github.com/jiuweile998/Test-springcloud-config.git #GitHub上面的git仓库名字
+          force-pull: true #设置强行pull拉取
           ####搜索目录
           search-paths:
             - Test-springcloud-config
       ####读取分支
-      label: main
+      #label: main
 
 #服务注册到eureka地址
 eureka:
